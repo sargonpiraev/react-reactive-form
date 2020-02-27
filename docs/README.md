@@ -206,7 +206,7 @@ class Form extends Component {
     showMeWomen: true
   }
   componentDidMount() {
-    const showMeMenControl = this.myForm.get('showMeMen').unsubscribe()
+    const showMeMenControl = this.myForm.get('showMeMen')
     const showMeWomenControl = this.myForm.get('showMeWomen')
     
     showMeMenControl.valueChanges.subscribe((value) => {
